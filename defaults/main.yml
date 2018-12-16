@@ -1,0 +1,3 @@
+---
+install_epel: True
+install_remi: True

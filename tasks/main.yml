@@ -1,0 +1,14 @@
+---
+- name: Install Epel from amazon-linux-extras
+  command: amazon-linux-extras install epel -y
+  become: yes
+  args:
+    creates: /etc/yum.repos.d/epel.repo
+  when: install_epel
+
+- name: Install remi
+  yum:
+    name: http://rpms.remirepo.net/enterprise/remi-release-7.rpm
+    state: latest
+  become: yes
+  when: install_remi
