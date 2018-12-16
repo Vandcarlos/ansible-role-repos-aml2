@@ -1,7 +1,8 @@
 galaxy_info:
-  author: your name
-  description: your description
-  company: your company (optional)
+  author: Vandcarlos Mouzinho Sandes Junior
+  description: Task for install epel and remi on Amazon Linux 2
+  company: ''
+  role_name: repos-aml2
 
   # If the issue tracker for your role is not on github, uncomment the
   # next line and provide a value
@@ -14,7 +15,7 @@ galaxy_info:
   # - GPLv3
   # - Apache
   # - CC-BY
-  license: license (GPLv2, CC-BY, etc)
+  license: MIT
 
   min_ansible_version: 2.4
 
@@ -46,7 +47,10 @@ galaxy_info:
   #   - 1.0
   #   - 7
   #   - 99.99
-
+  platforms:
+    - name: Amazon Linux
+      versions:
+        - 2
   galaxy_tags: []
     # List tags for your role here, one per line. A tag is a keyword that describes
     # and categorizes the role. Users find roles by searching for tags. Be sure to
